@@ -8,6 +8,7 @@ This document tracks the progress of the `building-code-linguistic-analysis` pip
 - [x] Draft initial parser architectures (`md_parser.py`, `section_splitter.py`).
 - [x] Scaffold domain artifacts (`deontic_patterns.yaml`).
 - [x] Segment raw input string `SBC-201-2007.md` into individual curated chapter files.
+- [x] Establish corpus vocabulary & sentence data baseline via `scripts/corpus_statistics.py`.
 - [x] Produce and integrate agent scaffolding (`AGENTS.md`).
 
 ## ✅ Phase B: Linguistic Analysis (Completed)

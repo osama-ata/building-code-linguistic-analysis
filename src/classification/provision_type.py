@@ -5,9 +5,9 @@ import re
 
 class ProvisionClassifier:
     def __init__(self):
-        # A simple fallback check for physical numeric traits.
+        # A simple fallback check for physical numeric traits and unit markers.
         # Ideally, this listens to the 'MEASUREMENT' parameter emitted from spaCy NER.
-        self.number_pattern = re.compile(r'\b\d+(\.\d+)?\b')
+        self.number_pattern = re.compile(r'\b\d+(\.\d+)?\s*(mm|m|lux|N|rpm|%|percent|degrees|m2|m\s*2|kJ/g|ml|kPa|°C|psi|liters|kilograms|microns)?\b', re.IGNORECASE)
 
     def classify(self, text: str, entities: list = None) -> str:
         """

@@ -15,13 +15,17 @@ class SentenceClassifier:
 
     def classify(self, text: str) -> str:
         """Heuristic categorization based on operators and root constraints."""
+        text_strip = text.strip()
+        if text_strip.lower().startswith("exception") or "exception:" in text_strip.lower():
+            return "Exception"
+
         operator = self.detector.extract_operator(text)
         
         if operator != "NONE":
             # If the user is obligated, permitted, or prohibited, it's prescriptive.
             return "Prescriptive"
             
-        text_lower = text.lower()
+        text_lower = text_strip.lower()
         if "means" in text_lower or "defined as" in text_lower or "refers to" in text_lower:
             return "Constitutive"
             
