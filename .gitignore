@@ -207,9 +207,9 @@ marimo/_lsp/
 __marimo__/
 
 # Data (tracked via DVC)
-data/01_raw/
-data/02_curated/
-data/04_processed/
+# data/01_raw/
+# data/02_curated/
+# data/04_processed/
 
 # Models
 models/
