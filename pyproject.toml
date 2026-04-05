@@ -1,0 +1,19 @@
+[project]
+name = "building-code-linguistic-analysis"
+version = "0.1.0"
+description = "NLP pipeline for transforming building codes into machine-processable rules"
+requires-python = ">=3.10"
+dependencies = [
+    "spacy>=3.7",
+    "pyyaml>=6.0",
+    "jsonlines>=4.0",
+    "click>=8.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "ruff", "mypy", "ipykernel"]
+ml = ["transformers", "torch", "scikit-learn", "mlflow"]
+
+[project.scripts]
+run-pipeline = "scripts.run_pipeline:main"

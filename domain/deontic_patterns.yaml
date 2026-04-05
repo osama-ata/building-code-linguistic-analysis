@@ -1,0 +1,11 @@
+# Deontic logic regex patterns
+
+patterns:
+  OBLIGATION:
+    - "(?i)\\b(shall|must|is required to|are required to)\\b"
+  PERMISSION:
+    - "(?i)\\b(may|is permitted to|are permitted to|can)\\b"
+  PROHIBITION:
+    - "(?i)\\b(shall not|must not|may not|is not permitted to|are not permitted to)\\b"
+  EXEMPTION:
+    - "(?i)\\b(need not|is not required to|are not required to)\\b"

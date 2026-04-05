@@ -1,0 +1,20 @@
+# Custom Domain Definitions for spaCy EntityRuler
+
+patterns:
+  BUILDING_ELEMENT:
+    - "door"
+    - "exit door"
+    - "wall"
+    - "stairway"
+    - "corridor"
+    - "ramp"
+    - "roof"
+  MEASUREMENT:
+    - "mm"
+    - "m"
+    - "meters"
+    - "millimeters"
+    - "sq ft"
+  SPATIAL:
+    - "exit route"
+    - "clear space"
