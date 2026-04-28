@@ -35,6 +35,7 @@ t0 = time.time()
 
 from src.preprocessing.section_splitter import ChapterSplitter
 from src.preprocessing.md_parser import MarkdownParser
+from src.preprocessing.normalizer import Normalizer
 
 raw_text = RAW_FILE.read_text(encoding="utf-8")
 print(f"  Raw file loaded: {len(raw_text):,} chars")
@@ -55,7 +56,10 @@ for ch in meaningful:
         all_clauses.extend(sec.get("clauses", []))
 
 print(f"  Total sections     : {total_sections}")
-print(f"  Total clauses      : {len(all_clauses)}")
+print(f"  Total clauses (raw): {len(all_clauses)}")
+normalizer = Normalizer()
+all_clauses = normalizer.normalize_batch(all_clauses)
+print(f"  Total clauses (normalised): {len(all_clauses)}")
 phase_a_time = time.time() - t0
 print(f"  Time: {phase_a_time:.1f}s")
 
