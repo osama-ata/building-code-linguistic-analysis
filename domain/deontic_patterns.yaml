@@ -2,10 +2,10 @@
 
 patterns:
   OBLIGATION:
-    - "(?i)\\b(shall|must|is required to|are required to)\\b"
+    - "(?i)\\b(shall|must|is required to|are required to|is to be|are to be|shall be provided|shall be installed|shall be constructed|shall be designed|shall comply|shall conform)\\b"
   PERMISSION:
-    - "(?i)\\b(may|is permitted to|are permitted to|can)\\b"
+    - "(?i)\\b(may|is permitted to|are permitted to|is allowed to|are allowed to|can|shall be allowed to|shall be permitted to)\\b"
   PROHIBITION:
-    - "(?i)\\b(shall not|must not|may not|is not permitted to|are not permitted to)\\b"
+    - "(?i)\\b(shall not|must not|may not|is not permitted to|are not permitted to|is prohibited|are prohibited|is not allowed to|are not allowed to|no .{1,40} shall)\\b"
   EXEMPTION:
-    - "(?i)\\b(need not|is not required to|are not required to)\\b"
+    - "(?i)\\b(need not|is not required to|are not required to|is exempt from|are exempt from|shall not be required to|are not required)\\b"

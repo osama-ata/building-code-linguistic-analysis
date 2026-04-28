@@ -4,7 +4,7 @@
     "meaningful_chapters": 18,
     "total_sections": 370,
     "total_clauses": 6775,
-    "time_s": 0.11
+    "time_s": 0.1
   },
   "phase_b": {
     "nlp_sample_size": 100,
@@ -24,47 +24,53 @@
       "LOC": 1,
       "PRODUCT": 1
     },
-    "time_s": 3.88
+    "time_s": 3.65
   },
   "phase_c": {
-    "sample_size": 500,
-    "prescriptive_count": 60,
-    "prescriptive_pct": 12.0,
+    "total_clauses_corpus": 6775,
+    "clauses_below_5_words": 671,
+    "sample_size": 6104,
+    "prescriptive_count": 2411,
+    "prescriptive_pct": 39.5,
+    "non_prescriptive_count": 3693,
     "deontic_distribution": {
-      "NONE": 440,
-      "OBLIGATION": 42,
-      "PROHIBITION": 5,
-      "PERMISSION": 10,
-      "EXEMPTION": 3
+      "NONE": 3693,
+      "OBLIGATION": 1667,
+      "PROHIBITION": 528,
+      "PERMISSION": 91,
+      "EXEMPTION": 125
     },
     "provision_types": {
-      "Qualitative": 435,
-      "Quantitative": 65
+      "Qualitative": 5118,
+      "Quantitative": 986
     },
-    "time_s": 0.01
+    "time_s": 0.14
   },
   "phase_d": {
-    "constraints": 113,
-    "avg_confidence": 0.565,
+    "prescriptive_clauses_in": 2411,
+    "short_sentences_dropped": 1692,
+    "constraints": 4135,
+    "avg_confidence": 0.642,
     "confidence_distribution": {
       "0.0-0.2": 0,
-      "0.2-0.4": 16,
-      "0.4-0.6": 32,
-      "0.6-0.8": 59,
-      "0.8-1.0": 6
+      "0.2-0.4": 491,
+      "0.4-0.6": 322,
+      "0.6-0.8": 2533,
+      "0.8-1.0": 789
     },
-    "with_condition": 23,
-    "with_numeric": 6,
-    "with_cross_ref": 11,
-    "flagged": 85,
+    "with_condition": 922,
+    "with_numeric": 773,
+    "with_cross_ref": 493,
+    "flagged": 3083,
     "flag_breakdown": {
-      "MISSING_AGENT": 36,
-      "MISSING_PATIENT": 74,
-      "UNRESOLVED_PRONOUN": 8,
-      "MISSING_NUMERIC": 14,
-      "VAGUE_CONDITION": 5,
-      "MULTIPLE_DEONTICS": 1
+      "MISSING_AGENT": 728,
+      "MISSING_PATIENT": 2594,
+      "UNRESOLVED_PRONOUN": 136,
+      "MISSING_NUMERIC": 673,
+      "VAGUE_CONDITION": 77,
+      "MULTIPLE_DEONTICS": 44,
+      "MODAL_CONFLICT": 8
     },
-    "time_s": 1.49
+    "time_s": 19.81
   }
 }

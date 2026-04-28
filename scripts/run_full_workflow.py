@@ -83,9 +83,13 @@ print(f"  Cross-ref index size: {cross_ref_resolver.size()} entries")
 phase_a_time = time.time() - t0
 print(f"  Time: {phase_a_time:.1f}s")
 
-# Sample sentences for downstream phases (cap at 500 for speed)
-sample_clauses = [c for c in all_clauses if len(c.split()) >= 5][:500]
-print(f"  Sample clauses for NLP (>=5 words): {len(sample_clauses)}")
+# Process all normalised clauses — no cap so no rules are silently discarded.
+# Short clauses (<5 words) are skipped; log the count so coverage is auditable.
+_all_long = [c for c in all_clauses if len(c.split()) >= 5]
+_dropped_short = len(all_clauses) - len(_all_long)
+sample_clauses = _all_long
+print(f"  Clauses >=5 words (for NLP)     : {len(sample_clauses)}")
+print(f"  Clauses dropped (<5 words)      : {_dropped_short}")
 
 # ── Phase B: NLP Pipeline ──────────────────────────────────────────────────
 banner("PHASE B — NLP PIPELINE")
@@ -158,11 +162,14 @@ from src.rule_extraction.constraint_builder import ConstraintBuilder
 from src.export.to_json import JsonExporter
 from src.export.to_legalruleml import LegalRuleMLExporter
 
-# Only run constraint builder on prescriptive clauses (has deontic op) for quality
+# Only run constraint builder on prescriptive clauses (has deontic op) for quality.
+# Log the non-prescriptive count so coverage can be verified.
 prescriptive_clauses = [
     c for c in sample_clauses if (deontic_det.extract_operator(c) or "NONE") != "NONE"
 ]
+non_prescriptive = len(sample_clauses) - len(prescriptive_clauses)
 print(f"  Prescriptive clauses to process: {len(prescriptive_clauses)}")
+print(f"  Non-prescriptive (NONE) clauses: {non_prescriptive}")
 
 builder = ConstraintBuilder(
     patterns_path=ROOT / "domain" / "deontic_patterns.yaml",
@@ -174,13 +181,17 @@ import spacy as _spacy
 
 _nlp_sent = _spacy.load("en_core_web_sm", disable=["ner", "lemmatizer"])
 sentence_pairs = []
+_dropped_sents = 0
 for i, clause in enumerate(prescriptive_clauses):
     doc = _nlp_sent(clause)
     for j, sent in enumerate(doc.sents):
         text = sent.text.strip()
         if len(text.split()) >= 4:
             sentence_pairs.append((f"SBC201.{i + 1:04d}.{j + 1:02d}", text))
+        else:
+            _dropped_sents += 1
 print(f"  Individual sentences to build  : {len(sentence_pairs)}")
+print(f"  Short sentences dropped (<4 w) : {_dropped_sents}")
 constraints = builder.build_from_sentences(sentence_pairs)
 
 # Enrich cross-references with resolved titles from the index.
@@ -244,7 +255,7 @@ print(f"  Time: {phase_d_time:.1f}s")
 banner("EXPORT")
 json_exp = JsonExporter()
 written = json_exp.export(constraints, RULES_OUT)
-print(f"  JSON Lines written : {written} records → {RULES_OUT.name}")
+print(f"  JSON Lines written : {written} records -> {RULES_OUT.name}")
 
 xml_exp = LegalRuleMLExporter()
 xml_exp.export(constraints, XML_OUT)
@@ -290,14 +301,19 @@ stats = {
         "time_s": round(phase_b_time, 2),
     },
     "phase_c": {
+        "total_clauses_corpus": len(all_clauses),
+        "clauses_below_5_words": _dropped_short,
         "sample_size": len(sample_clauses),
         "prescriptive_count": prescriptive_n,
         "prescriptive_pct": round(prescriptive_n / len(sample_clauses) * 100, 1),
+        "non_prescriptive_count": non_prescriptive,
         "deontic_distribution": deontic_counts,
         "provision_types": provision_counts,
         "time_s": round(phase_c_time, 2),
     },
     "phase_d": {
+        "prescriptive_clauses_in": len(prescriptive_clauses),
+        "short_sentences_dropped": _dropped_sents,
         "constraints": len(constraints),
         "avg_confidence": round(avg_conf, 3),
         "confidence_distribution": confidence_bins,
