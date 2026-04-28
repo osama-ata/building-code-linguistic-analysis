@@ -1,0 +1,1026 @@
+<?xml version='1.0' encoding='utf-8'?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/legalruleml#">
+  <lrml:Statements key="SBC201">
+    <lrml:Statement key="SBC201.0001">
+      <!-- AGRICULTURAL,  BUILDING. A  structure  designed  and  constructed  to  house  farm implements, hay, grain, poultry, livestock or other horticultural products. This structure shall -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>AGRICULTURAL</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0002">
+      <!-- - 1.1.1 Scope. Unless otherwise expressly stated, the following words and terms shall, for the purposes of these requirements, have the meanings shown in this chapter. -->
+      <lrml:Obligation>
+        <lrml:Condition>otherwise expressly stated, the following words</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Scope</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0003">
+      <!-- - 1.1.3 Terms  defined  in  other  codes. Where  terms  are  not  defined  in  the  code requirements  and  are  defined  in  other  SBC  provisions  and  requirements , such terms  shall  have  the  meanings  ascribed  to  them  as  in  those  provisions  and requirements. -->
+      <lrml:Obligation>
+        <lrml:Condition>terms  are  not  defined  in  the  code requirements</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Terms</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0004">
+      <!-- - 1.1.4 Terms not defined. Where terms are not defined through the methods authorized by  this  section,  such  terms  shall  have  ordinarily  accepted  meanings  such  as  the context implies. -->
+      <lrml:Obligation>
+        <lrml:Condition>terms are not defined through the methods authorized by  this  section,  such  terms  shall  have  ordinarily  accepted  meanings  such  as  the context implies</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>1.1.4</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0005">
+      <!-- not be a place of human habitation or a place of employment where agricultural products are processed, treated or packaged, nor shall it be a place used by the public. -->
+      <lrml:Obligation>
+        <lrml:Condition>agricultural products are processed, treated</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>not be</rel>
+            </op>
+            <arg>
+              <ind>a place of human habitation or a place of employment where agricultural products are processed , treated or packaged</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0006">
+      <!-- BUILDING LINE. The line established by law, beyond which a building shall not extend, except as specifically provided by law. -->
+      <lrml:Obligation>
+        <lrml:Condition>as specifically provided by law</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>LINE</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0007">
+      <!-- SLEEPING  UNIT. A  room  or  space  in  which  people  sleep,  which  can  also  include permanent provisions for living, eating, and either sanitation or kitchen facilities but not both. Such rooms and spaces that are also part of a dwelling unit are not sleeping units. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>UNIT</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0008">
+      <!-- STORY  ABOVE  GRADE  PLANE. Any  story  having  its  finished  floor  surface  entirely above grade plane, except that a basement shall be considered as a story above grade plane where the finished surface of the floor above the basement is: -->
+      <lrml:Obligation>
+        <lrml:Condition>that a basement shall be considered as a story above grade plane where the finished surface of the floor above the basement is:</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>STORY</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0009">
+      <!-- - 2.1.1 Scope. The  provisions  of  this  chapter  shall  control  the  classification  of  all buildings and structures as to use and occupancy. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Scope</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0010">
+      <!-- - 2.2.1 General. Structures  or  portions  of  structures  shall  be  classified  with  respect  to occupancy in one or more of the groups listed below. Structures with multiple uses shall be classified according to Section 2.2.3. Where a structure is proposed for a purpose  which  is  not  specifically  provided  for  in  this  code  requirements,  such structure  shall  be  classified  in  the  group  which  the  occupancy  most  nearly resembles, according to the fire safety and relative hazard involved. -->
+      <lrml:Obligation>
+        <lrml:Condition>a structure is proposed for a purpose  which  is  not  specifically  provided  for  in  this  code  requirements,  such structure  shall  be  classified  in  the  group  which  the  occupancy  most  nearly resembles, according to the fire safety</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>General</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0011">
+      <!-- - 2.2.1.1 Incidental use areas. Spaces which are incidental to the main occupancy shall be separated or protected, or both, in accordance with Table 2.2.1.1 or the building shall be classified as a mixed occupancy and comply with Section 2.2.3. Areas that are  incidental  to  the  main  occupancy  shall  be  classified  in  accordance  with  the main occupancy of the portion of the building in which the incidental use area is located. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>areas</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="numeric_value" value="1.1" unit="In" />
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0012">
+      <!-- Exception: Incidental use areas within and serving a dwelling unit are not required to comply with this section. -->
+      <lrml:Exemption>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>are not required</rel>
+            </op>
+            <arg>
+              <ind>to comply with this section</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>Exception : Incidental use areas within and serving a dwelling unit</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Exemption>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0013">
+      <!-- - 2.2.1.1.1 Separation. Where  Table  2.2.1.1  requires  a fire-resistance-rated  separation,  the incidental use area shall be separated from the remainder of the building with a fire barrier.  Where  Table  2.2.1.1  permits  an  automatic  fire-extinguishing  system without  a  fire  barrier,  the  incidental  use  area  shall  be  separated  by  construction capable  of  resisting  the  passage  of  smoke.  The  partitions shall  extend  from  the floor  to  the  underside  of  the  fire-resistance-rated  floor/ceiling  assembly  or  fireresistance-rated roof/ceiling assembly or to the underside of the floor or roof deck above. Doors shall be self-closing or automatic-closing upon detection of smoke. Doors shall not have air transfer openings and shall not be undercut in excess of the clearance permitted in accordance with NFPA 80. -->
+      <lrml:Obligation>
+        <lrml:Condition>Table  2.2.1.1  requires  a fire-resistance-rated  separation,  the incidental use area shall be separated from the remainder of the building with a fire barrier.  Where  Table  2.2.1.1  permits  an  automatic  fire-extinguishing  system without  a  fire  barrier,  the  incidental  use  area  shall  be  separated  by  construction capable  of  resisting  the  passage  of  smoke.  The  partitions shall  extend  from  the floor  to  the  underside  of  the  fire-resistance-rated  floor/ceiling  assembly</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Separation</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0014">
+      <!-- - 2.2.2 Accessory  use  areas. A fire  barrier  shall  be  required  to  separate  accessory  use areas classified as Group H in accordance with Section 2.2.3.1, and incidental use areas in accordance with Section 2.2.1.1. Any other accessory use area shall not be -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>use</rel>
+            </op>
+            <arg>
+              <ind>areas</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>- 2.2.2 Accessory  </lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0015">
+      <!-- - 2.2.3 Mixed  occupancies. Where  a  building  is  occupied  by  two  or  more  uses  not included in the same occupancy classification, the building or portion thereof shall comply with Section 2.2.3.1 or 2.2.3.2 or a combination of these sections. -->
+      <lrml:Obligation>
+        <lrml:Condition>a  building  is  occupied  by  two</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>occupancies</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:CrossReference>Section 2.2.3.1</lrml:CrossReference>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0016">
+      <!-- 2. Areas of Group H-2, H-3, H-4 or H-5 occupancies shall be separated from any other occupancy in accordance with Section 2.2.3.2. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>shall be separated</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>Areas of Group H-2 , H-3 , H-4 or H-5 occupancies</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:CrossReference>Section 2.2.3.2.</lrml:CrossReference>
+      <lrml:Metadata type="confidence" value="0.75" />
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0017">
+      <!-- 3. Where required by Table 2.28.3.2, areas of Group H-1, H-2 or H-3 occupancy shall be located in a separate and detached building or structure. -->
+      <lrml:Obligation>
+        <lrml:Condition>required by Table 2.28.3.2, areas of Group H-1, H-2</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>shall be located</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>areas of Group H-1 , H-2 or H-3 occupancy</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.75" />
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0018">
+      <!-- 6. 2.2.3.1 Non-separated uses. Each portion of the building shall be individually classified as to use. The required type of construction for the building shall be determined by -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>uses</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0019">
+      <!-- applying the height and area limitations for each of the applicable occupancies to the entire building. The most restrictive type of construction, so determined, shall apply  to  the  entire  building.  All  other  code  requirements  shall  apply  to  each portion  of  the  building  based  on  the  use  of  that  space  except  that  the  most restrictive applicable provisions of Section 2.3 and Chapter 7 of the SBC 801 shall apply to these non-separated uses. Fire separations are not required between uses, except as required by other provisions. -->
+      <lrml:Obligation>
+        <lrml:Condition>that  the  most restrictive applicable provisions of Section 2.3</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>applying</rel>
+            </op>
+            <arg>
+              <ind>the height and area limitations</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:CrossReference>Section 2.3</lrml:CrossReference>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0020">
+      <!-- - 2.2.3.2 Separated uses. Each portion of the building shall be individually classified as to use and shall be completely separated from adjacent areas by fire barrier walls or horizontal assemblies  or  both  having  a  fire-resistance  rating  determined  in accordance  with  Table  2.2.3.2  for  uses  being  separated.  Each  fire  area  shall comply with  this code requirements based on the use of that space. Each fire area shall comply with the height limitations based on the use of that space and the type of construction classification. In each story, the building area shall be such that the sum of the ratios of the floor area of each use divided by the allowable area for each use shall not exceed one. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>uses</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0021">
+      <!-- Exception: Except  for  Group  H  and  I-2  areas,  where  the  building  is  equipped throughout  with  an  automatic  sprinkler  system,  installed  in  accordance  with Section 7.3.3.1.1, the fire-resistance ratings in Table 2.2.3.3 shall be reduced by 1 hour  but  to  not  less  than  1  hour  and  to  not  less  than  that  required  for  floor construction according to the type of construction. -->
+      <lrml:Obligation>
+        <lrml:Condition>for  Group  H</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Exception</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:CrossReference>Section 7.3.3.1.1</lrml:CrossReference>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0022">
+      <!-- - 2.2.4 Spaces  used  for  different  purposes. A  room  or  space  that  is  intended  to  be occupied  at  different  times  for  different  purposes  shall  comply  with  all  the requirements  that  are  applicable  to  each  of  the  purposes  for  which  the  room  or space will be occupied. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Spaces</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0023">
+      <!-- - 2.3.1 Assembly Group A. Assembly Group A occupancy includes, among others, the use of a building or structure, or a portion thereof, for the gathering together of persons for  purposes  such  as  civic,  social  or  religious  functions,  recreation,  food  or  drink consumption or awaiting transportation. A room or space used for assembly purposes by less than 50 persons and accessory to another occupancy shall be included as a part of that occupancy. Assembly areas with less than 70 m 2 and which are accessory to  another  occupancy  according  to  Section  2.2.2.1  are  not  assembly  occupancies. Assembly occupancies which are accessory to Group E in accordance with Section 2.2.2  are  not  considered  assembly  occupancies.  Educational  rooms,  multi-purpose halls  and  auditoriums  which  are  accessory  to  mosques  in  accordance  with  Section 2.2.2 and which have occupant loads of less than 100 shall be classified as A-3. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>includes</rel>
+            </op>
+            <arg>
+              <ind>the use of a building or structure , or a portion thereof , for the gathering together of persons for   purposes   such   as   civic ,   social   or   religious   functions ,   recreation ,   food   or   drink consumption or awaiting transportation</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>- 2.3.1 Assembly Group A. Assembly Group A occupancy</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0024">
+      <!-- Assembly occupancies shall include the following: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>shall include</rel>
+            </op>
+            <arg>
+              <ind>the following</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>Assembly occupancies</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0025">
+      <!-- Occupancy separation need not be provided for storage areas within Groups B and M if the: -->
+      <lrml:Exemption>
+        <lrml:Condition>the:</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>need not be provided</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>Occupancy separation</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Exemption>
+      <lrml:Metadata type="confidence" value="0.75" />
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+      <lrml:Metadata type="flag">VAGUE_CONDITION</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0026">
+      <!-- - c. Areas used only for private or pleasure vehicles shall be allowed to reduce separation by 1 hour. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>used</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>- c. Areas</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0027">
+      <!-- e. Commercial kitchens need not be separated from the restaurant seating areas that they serve. -->
+      <lrml:Exemption>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>need not be separated</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>e. Commercial kitchens</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Exemption>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0028">
+      <!-- - 2.3.1.1 Non-accessory  assembly  use .  A  building  or  tenant  space  used  for  assembly purposes by less than 50 persons shall be considered a Group B occupancy. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>use</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0029">
+      <!-- - 2.4.1 Business Group B. Business Group B occupancy includes, among others, the use of a building or structure, or a portion thereof, for office, professional or servicetype transactions, including storage of records and accounts. Business occupancies shall include, but not be limited to, the following: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>includes</rel>
+            </op>
+            <arg>
+              <ind>the use of a building or structure , or a portion thereof , for office , professional or servicetype transactions , including storage of records and accounts</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>- 2.4.1 Business Group B. Business Group B occupancy</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0030">
+      <!-- - 2.5.1 Educational Group E. Educational Group E occupancy includes, among others, the use of a building or structure, or a portion thereof, by six or more persons at any one time for educational purposes through the 12th grade. Educational rooms, multi-purpose halls and auditoriums, which are accessory to mosques in accordance with Section 2.2.2 and have occupant loads of less than 100, shall be classified as A-3 occupancies. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>includes</rel>
+            </op>
+            <arg>
+              <ind>the use of a building or structure , or a portion thereof , by six or more persons at any one time for educational purposes through the 12th grade</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>- 2.5.1 Educational Group E. Educational Group E occupancy</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.7" />
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0031">
+      <!-- - 2.5.2 Day care. T he use of a building or structure, or portion thereof, for educational, supervision or personal care services for more than five children older than 2 1 / 2 years of age, shall be classified as a Group E occupancy. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>care</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0032">
+      <!-- - 2.6.2 Factory  Industrial  F-1  Moderate-Hazard  Occupancy. Factory  industrial  uses which are not classified as Factory Industrial F-2 Low Hazard shall be classified as F-1 Moderate Hazard and shall include, but not be limited to, the following: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Occupancy</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0033">
+      <!-- - 2.6.3 Factory  Industrial  F-2  Low-Hazard  Occupancy. Factory  industrial  uses  that involve  the  fabrication  or  manufacturing  of  noncombustible  materials  which during  finishing,  packing  or  processing  do  not  involve  a  significant  fire  hazard shall be classified as F-2 occupancies and shall include, but not be limited to, the following: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>F-2</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0034">
+      <!-- - 2.7.2 Definitions. The following words and terms shall, for the purposes of this section and as used elsewhere in this code requirements, have the meanings shown herein. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Definitions</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0035">
+      <!-- AEROSOL. A product that is dispensed from an aerosol container by a propellant. Aerosol products shall be classified by means of the calculation of their chemical heats of combustion and shall be designated Level 1, 2 or 3. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>AEROSOL</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0036">
+      <!-- AEROSOL CONTAINER .  A  metal can or a glass or plastic bottle designed to dispense an aerosol. Metal cans shall be limited to a maximum size of 1,000 ml. Glass or plastic bottles shall be limited to a maximum size of 118 ml. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>AEROSOL</rel>
+            </op>
+            <arg>
+              <ind>CONTAINER</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0037">
+      <!-- BOILING  POINT. The  temperature  at  which  the  vapor  pressure  of  a  liquid equals the atmospheric pressure of 101 kPa gage or 760 mm of mercury. Where an accurate boiling point is unavailable for the material in question, or for mixtures, which do not have a constant boiling point, for the purposes of this classification, the  20-percent  evaporated  point  of  a  distillation  performed  in  accordance  with ASTM D 86, shall be used as the boiling point of the liquid. -->
+      <lrml:Obligation>
+        <lrml:Condition>an accurate boiling point is unavailable for the material in question,</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>POINT</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0038">
+      <!-- COMBUSTIBLE LIQUID. A liquid having a closed cup flash point at or above 38°C. Combustible liquids shall be subdivided as follows: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>LIQUID</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0039">
+      <!-- CORROSIVE. A  chemical  that  causes  visible  destruction  of,  or  irreversible alterations in, living tissue by chemical action at the point of contact. A chemical shall  be  considered  corrosive  if,  when  tested  on  the  intact  skin  of  albino  rabbits such a chemical destroys or changes irreversibly the structure of the tissue at the point of contact following an exposure period of 4 hours. This term does not refer to action on inanimate surfaces. -->
+      <lrml:Obligation>
+        <lrml:Condition>,  when  tested  on  the  intact  skin  of  albino  rabbits such a chemical destroys</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>CORROSIVE</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0040">
+      <!-- DEFLAGRATION . An  exothermic reaction, such as the extremely rapid oxidation  of  a  flammable  dust  or  vapor  in  air,  in  which  the  reaction  progresses through  the  unburned  material  at  a  rate  less  than  the  velocity  of  sound.  A deflagration can have an explosive effect. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>DEFLAGRATION</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0041">
+      <!-- High explosive. Explosive material, such as dynamite, which can be caused to detonate by means of a No. 8 test blasting cap when unconfined. -->
+      <lrml:Permission>
+        <lrml:Condition>unconfined</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>explosive</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">VAGUE_CONDITION</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0042">
+      <!-- Mass-detonating explosives. Division 1.1, 1.2 and 1.5 explosives alone or in combination, or loaded into various types of ammunition or containers, most of which  can  be  expected  to  explode  virtually  instantaneously  when  a  small portion  is  subjected  to  fire,  severe  concussion,  impact,  the  impulse  of  an initiating  agent  or  the  effect  of  a  considerable  discharge  of  energy  from without. Materials that react in this manner represent a mass explosion hazard. Such  an  explosive  will  normally  cause  severe  structural  damage  to  adjacent objects.  Explosive  propagation  could  occur  immediately  to  other  items  of ammunition  and  explosives  stored  sufficiently  close  to  and  not  adequately protected from the initially exploding pile with a time interval short enough so that  two  or  more  quantities  must  be  considered  as  one  for  quantity-distance purposes. -->
+      <lrml:Obligation>
+        <lrml:Condition>a  small portion  is  subjected  to  fire,  severe  concussion,  impact,  the  impulse  of  an initiating  agent</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>explosives</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0043">
+      <!-- Division  1.4. Explosives  that  pose  a  minor  explosion  hazard.  The  explosive effects are largely confined to the package and no projection of fragments of appreciable  size  or  range  is  to  be  expected.  An  external  fire  must  not  cause virtually instantaneous explosion of almost the entire contents of the package. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Division</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_NUMERIC</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0044">
+      <!-- The  limits  specified  shall  be  determined  at  101  kPa  of  pressure  and  a temperature of 20°C in accordance with (ASTM E 681). -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>shall be determined</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>The   limits   specified  </lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="numeric_value" value="101.0" unit="kPa" />
+      <lrml:Metadata type="confidence" value="0.75" />
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0045">
+      <!-- FLAMMABLE SOLID. A solid, other than a blasting agent or explosive, that is capable  of  causing  fire  through  friction,  absorption  or  moisture,  spontaneous chemical change, or retained heat from manufacturing or processing, or which has an ignition temperature below 100°C  or which burns so vigorously and persistently  when  ignited  as  to  create  a  serious  hazard.  A  chemical  shall  be considered a flammable solid as determined in accordance with the test method of CPSC 16 CFR; Part 1500.44, if it ignites and burns with a self-sustained flame at a rate greater than 2.5 mm per second along its major axis. -->
+      <lrml:Obligation>
+        <lrml:Condition>ignited  as  to  create  a  serious  hazard.  A  chemical  shall  be considered a flammable solid as determined in accordance with the test method of CPSC 16 CFR; Part 1500.44, if it ignites</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>SOLID</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0046">
+      <!-- FLASH  POINT. The  minimum  temperature  in  degrees  Fahrenheit  at  which  a liquid will give off sufficient vapors to form an ignitable mixture with air near the surface or in the container, but will not sustain combustion. The flash point of a liquid shall be determined by appropriate test procedure and apparatus as specified in ASTM D 56, ASTM D 93 or ASTM D 3278. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>FLASH</rel>
+            </op>
+            <arg>
+              <ind>POINT</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0047">
+      <!-- Mixtures of these materials with ordinary materials, such as water, might not warrant classification as highly toxic. While this system is basically simple in application, any hazard evaluation that is required for the precise categorization  of  this  type  of  material  shall  be  performed  by  experienced, technically competent persons. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>might not warrant</rel>
+            </op>
+            <arg>
+              <ind>classification</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>Mixtures of these materials with ordinary materials , such as water</lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MULTIPLE_DEONTICS</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0048">
+      <!-- ORGANIC  PEROXIDE. An  organic  compound  that  contains  the  bivalent structure and which may be considered to be a structural derivative of hydrogen peroxide  where  one  or  both  of  the  hydrogen  atoms  have  been  replaced  by  an organic  radical.  Organic  peroxides  can  pose  an  explosion  hazard  (detonation  or deflagration) or they can be shock sensitive. They can also decompose into various unstable compounds over an extended period of time. -->
+      <lrml:Permission>
+        <lrml:Condition>one</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>PEROXIDE</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">VAGUE_CONDITION</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0049">
+      <!-- Class 4. An  oxidizer that can undergo an explosive reaction due to contamination  or  exposure  to  thermal  or  physical  shock.  Additionally,  the oxidizer will enhance the burning rate and can cause spontaneous ignition of combustibles. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Class</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0050">
+      <!-- OXIDIZING GAS. A gas  that  can  support  and  accelerate  combustion  of  other materials. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>OXIDIZING</rel>
+            </op>
+            <arg>
+              <ind>GAS</ind>
+            </arg>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0051">
+      <!-- source or which must be heated under confinement before initiation. This class includes materials that are sensitive to thermal or mechanical shock at elevated temperatures and pressures. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>source</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0052">
+      <!-- Class  2. Materials  that  in  themselves  are  normally  unstable  and  readily undergo  violent  chemical  change  but  do  not  detonate.  This  class  includes materials  that  can  undergo  chemical  change  with  rapid  release  of  energy  at normal  temperatures  and  pressures,  and  that  can  undergo  violent  chemical change at elevated temperatures and pressures. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Class</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0053">
+      <!-- Class  1. Materials  that  in  themselves  are  normally  stable  but  which  can become unstable at elevated temperatures and pressure. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Class</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0054">
+      <!-- Class 2. Materials that may form potentially explosive mixtures with water. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Class</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0055">
+      <!-- Class 1. Materials that may react with water with some release of energy, but not violently. -->
+      <lrml:Permission>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Class</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Permission>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0056">
+      <!-- - 2.7.3 High-Hazard Group H-1. Buildings and structures which contain materials that present a detonation hazard shall be classified as Group H-1. Such materials shall include, but not be limited to, the following: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>H-1</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0057">
+      <!-- Exception: Materials  that  are  used  and  maintained  in  a  form  where  either confinement or configuration will not elevate the hazard from a mass fire to mass explosion hazard shall be allowed in H-2 occupancies. -->
+      <lrml:Obligation>
+        <lrml:Condition>either confinement</lrml:Condition>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>Exception</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.55" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+      <lrml:Metadata type="flag">VAGUE_CONDITION</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0058">
+      <!-- Exception: Articles,  including  articles  packaged  for  shipment,  that  are  not regulated  as  an  explosive  under  Bureau  of  Alcohol,  Tobacco  and  Firearms regulations, or unpackaged  articles  used  in  process  operations  that do  not propagate  a  detonation  or  deflagration  between  articles  shall  be  allowed  in  H-3 occupancies. -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>shall be allowed</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+        <lrml:Bearer>
+          <lrml:Agent>Articles ,   including   articles   packaged   for   shipment ,   that   are   not regulated   as   an   explosive   under   Bureau   of   Alcohol ,   Tobacco   and   Firearms regulations , or unpackaged   articles   used   in   process   operations   that do   not propagate   a   detonation   or  </lrml:Agent>
+        </lrml:Bearer>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.65" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+    <lrml:Statement key="SBC201.0059">
+      <!-- - 2.7.4 High-Hazard Group H-2. Buildings and structures which contain materials that present  a  deflagration  hazard  or  a  hazard  from  accelerated  burning  shall  be classified  as  Group  H-2.  Such  materials shall  include,  but  not  be  limited  to,  the following: -->
+      <lrml:Obligation>
+        <lrml:Proposition>
+          <atom>
+            <op>
+              <rel>H-2</rel>
+            </op>
+          </atom>
+        </lrml:Proposition>
+      </lrml:Obligation>
+      <lrml:Metadata type="confidence" value="0.45" />
+      <lrml:Metadata type="flag">UNRESOLVED_PRONOUN</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_AGENT</lrml:Metadata>
+      <lrml:Metadata type="flag">MISSING_PATIENT</lrml:Metadata>
+    </lrml:Statement>
+  </lrml:Statements>
+</lrml:LegalRuleML>
