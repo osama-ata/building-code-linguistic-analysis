@@ -22,8 +22,7 @@ if TYPE_CHECKING:
     from src.rule_extraction.constraint_builder import Constraint
 
 _PRONOUN_RE = re.compile(
-    r"\b(?:it|they|them|their|its|this|that|these|those|such"
-    r"|the\s+above|the\s+following)\b",
+    r"\b(?:it|they|them|their|its)\b",
     re.IGNORECASE,
 )
 _DIMENSION_RE = re.compile(

@@ -3,65 +3,68 @@
     "chapters": 18,
     "meaningful_chapters": 18,
     "total_sections": 370,
-    "total_clauses": 6890,
-    "time_s": 0.02
+    "total_clauses": 6775,
+    "time_s": 0.11
   },
   "phase_b": {
     "nlp_sample_size": 100,
     "sentences": 198,
-    "entities": 56,
-    "svo_triplets": 10,
+    "entities": 61,
+    "svo_triplets": 21,
     "entity_breakdown": {
-      "ORG": 25,
+      "ORG": 22,
       "PERSON": 6,
       "LAW": 9,
       "GPE": 2,
-      "BUILDING_ELEMENT": 1,
-      "CARDINAL": 10,
+      "SPATIAL": 4,
+      "FIRE_RESISTANCE": 1,
+      "BUILDING_ELEMENT": 3,
+      "CARDINAL": 11,
       "WORK_OF_ART": 1,
       "LOC": 1,
       "PRODUCT": 1
     },
-    "time_s": 4.88
+    "time_s": 3.88
   },
   "phase_c": {
     "sample_size": 500,
-    "prescriptive_count": 59,
-    "prescriptive_pct": 11.8,
+    "prescriptive_count": 60,
+    "prescriptive_pct": 12.0,
     "deontic_distribution": {
-      "NONE": 441,
-      "OBLIGATION": 46,
+      "NONE": 440,
+      "OBLIGATION": 42,
+      "PROHIBITION": 5,
       "PERMISSION": 10,
       "EXEMPTION": 3
     },
     "provision_types": {
-      "Quantitative": 404,
-      "Qualitative": 96
+      "Qualitative": 435,
+      "Quantitative": 65
     },
-    "time_s": 0.02
+    "time_s": 0.01
   },
   "phase_d": {
-    "constraints": 59,
-    "avg_confidence": 0.542,
+    "constraints": 113,
+    "avg_confidence": 0.565,
     "confidence_distribution": {
       "0.0-0.2": 0,
-      "0.2-0.4": 0,
-      "0.4-0.6": 42,
-      "0.6-0.8": 17,
-      "0.8-1.0": 0
+      "0.2-0.4": 16,
+      "0.4-0.6": 32,
+      "0.6-0.8": 59,
+      "0.8-1.0": 6
     },
-    "with_condition": 20,
-    "with_numeric": 2,
-    "with_cross_ref": 4,
-    "flagged": 58,
+    "with_condition": 23,
+    "with_numeric": 6,
+    "with_cross_ref": 11,
+    "flagged": 85,
     "flag_breakdown": {
-      "UNRESOLVED_PRONOUN": 44,
-      "MISSING_AGENT": 45,
-      "MISSING_PATIENT": 47,
-      "MISSING_NUMERIC": 9,
-      "VAGUE_CONDITION": 4,
+      "MISSING_AGENT": 36,
+      "MISSING_PATIENT": 74,
+      "UNRESOLVED_PRONOUN": 8,
+      "MISSING_NUMERIC": 14,
+      "VAGUE_CONDITION": 5,
       "MULTIPLE_DEONTICS": 1
     },
-    "time_s": 2.23
+    "time_s": 1.49
   }
 }

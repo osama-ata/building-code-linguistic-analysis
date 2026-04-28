@@ -19,13 +19,23 @@ class DeonticDetector:
             compiled_patterns = [re.compile(pattern) for pattern in regex_list]
             self.deontic_map[category] = compiled_patterns
 
+    # Check negating/restrictive operators before permissive ones so that
+    # "shall not" is never shadowed by the bare "shall" OBLIGATION pattern.
+    _PRIORITY_ORDER = ["PROHIBITION", "EXEMPTION", "OBLIGATION", "PERMISSION"]
+
     def extract_operator(self, text: str) -> str:
         """
-        Scans text sequentially and returns the first mapped deontic category.
-        Returns 'NONE' if no operator is matched.
+        Scans text in priority order (negating operators first) and returns the
+        first matched deontic category.  Returns 'NONE' if nothing matched.
         """
-        for category, patterns in self.deontic_map.items():
-            for pattern in patterns:
+        ordered_keys = sorted(
+            self.deontic_map.keys(),
+            key=lambda k: self._PRIORITY_ORDER.index(k)
+            if k in self._PRIORITY_ORDER
+            else len(self._PRIORITY_ORDER),
+        )
+        for category in ordered_keys:
+            for pattern in self.deontic_map[category]:
                 if pattern.search(text):
                     return category
         return "NONE"

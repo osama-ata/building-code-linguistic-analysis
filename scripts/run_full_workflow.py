@@ -60,6 +60,26 @@ print(f"  Total clauses (raw): {len(all_clauses)}")
 normalizer = Normalizer()
 all_clauses = normalizer.normalize_batch(all_clauses)
 print(f"  Total clauses (normalised): {len(all_clauses)}")
+
+# Build cross-reference index from all parsed sections.
+# MarkdownParser sections carry "level"/"title" but no "id"; the section
+# number (e.g. "2.2.3") is embedded at the start of the title.
+import re as _re
+
+_SEC_TITLE_RE = _re.compile(r"^([\d]+(?:\.[\d]+)*)\s")
+
+from src.preprocessing.cross_ref_resolver import CrossRefResolver
+
+cross_ref_resolver = CrossRefResolver()
+for ch in meaningful:
+    struct = md_parser.parse_file(ch["body"])
+    annotated_sections = []
+    for sec in struct.get("sections", []):
+        m = _SEC_TITLE_RE.match(sec.get("title", ""))
+        annotated_sections.append({**sec, "id": m.group(1) if m else ""})
+    cross_ref_resolver.build_index(annotated_sections)
+print(f"  Cross-ref index size: {cross_ref_resolver.size()} entries")
+
 phase_a_time = time.time() - t0
 print(f"  Time: {phase_a_time:.1f}s")
 
@@ -147,10 +167,37 @@ print(f"  Prescriptive clauses to process: {len(prescriptive_clauses)}")
 builder = ConstraintBuilder(
     patterns_path=ROOT / "domain" / "deontic_patterns.yaml",
 )
-sentence_pairs = [
-    (f"SBC201.{i + 1:04d}", s) for i, s in enumerate(prescriptive_clauses)
-]
+
+# Pre-split each clause block into individual sentences so the SRL
+# receives a clean single sentence rather than a multi-sentence paragraph.
+import spacy as _spacy
+
+_nlp_sent = _spacy.load("en_core_web_sm", disable=["ner", "lemmatizer"])
+sentence_pairs = []
+for i, clause in enumerate(prescriptive_clauses):
+    doc = _nlp_sent(clause)
+    for j, sent in enumerate(doc.sents):
+        text = sent.text.strip()
+        if len(text.split()) >= 4:
+            sentence_pairs.append((f"SBC201.{i + 1:04d}.{j + 1:02d}", text))
+print(f"  Individual sentences to build  : {len(sentence_pairs)}")
 constraints = builder.build_from_sentences(sentence_pairs)
+
+# Enrich cross-references with resolved titles from the index.
+# CrossRefResolver.resolve() returns a dict; we store the resolved
+# title string (or fall back to the original ref string).
+resolved_refs = 0
+for c in constraints:
+    resolved = []
+    for ref in c.cross_refs:
+        result = cross_ref_resolver.resolve(ref)
+        if result["resolved"]:
+            resolved.append(result["title"])
+            resolved_refs += 1
+        else:
+            resolved.append(ref)
+    c.cross_refs = resolved
+print(f"  Cross-references resolved      : {resolved_refs}")
 
 # Stats
 flag_counts = {}

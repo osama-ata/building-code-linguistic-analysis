@@ -37,25 +37,43 @@ This document tracks the progress of the `building-code-linguistic-analysis` pip
 
 ## 🚀 Phase E: Quality Enhancements (In Progress)
 
-**Workflow run results (2026-04-28):**
+**Workflow run results (latest — Phase F fixes applied):**
 
-- Phases A–D completed in 7.2 s on full SBC-201-2007.md (1 698 576 chars)
-- 59 constraints exported to `data/04_processed/rules.jsonl` and `rules_legalruleml.xml`
-- Average confidence: 0.542 (max 0.75) — blocked by missing agent/patient
-- Flag rate: 98.3% — root cause: PDF-to-Markdown artefacts pollute clause text pre-NLP
+| Metric | Before Phase E | After Phase E | After Phase F (current) |
+|---|---|---|---|
+| Total constraints | 59 | 60 | **113** |
+| Avg confidence | 0.542 | 0.536 | **0.565** |
+| Max confidence | 0.75 | 0.75 | **0.95** |
+| 0.8–1.0 confidence | 0 | 0 | **6** |
+| PROHIBITION detected | 0 | 0 | **5** |
+| UNRESOLVED_PRONOUN flags | — | 45 | **8** |
+| Flag rate | — | 98.3% | **75.2%** |
+| With numeric value | — | 1 | **6** |
+| With cross-reference | — | 4 | **11** |
+| SVO triplets (100 clauses) | — | 11 | **21** |
+| Pipeline time | 7.2 s | 4.7 s | 5.5 s |
+| Tests passing | 0 / 0 | 41 / 41 | **41 / 41** |
 
-**Enhancements in progress:**
+**Completed Phase E enhancements:**
 
-- [x] Implement `src/preprocessing/normalizer.py` — strips list-item prefixes, heading hashes, multi-space runs, mis-encoded Unicode (critical — unblocks NER and SRL quality).
-- [x] Fix `src/classification/provision_type.py` — require physical unit after number to avoid false-positive Quantitative on section references like `2.2.3.2`.
-- [x] Expand `domain/entity_types.yaml` — grew BUILDING_ELEMENT from 14 → ~85 patterns; added FIRE_RESISTANCE and MATERIAL categories; expanded MEASUREMENT, SPATIAL, OCCUPANCY_GROUP.
-- [x] Implement `src/preprocessing/cross_ref_resolver.py` — index all section titles and resolve `Section X.Y.Z` strings to their titles.
-- [x] Populate `tests/conftest.py` with shared fixtures (5 session-scoped fixtures).
-- [x] Populate `tests/test_preprocessing.py` (16 tests: Normalizer, MarkdownParser, ChapterSplitter, CrossRefResolver) — all pass.
-- [x] Populate `tests/test_rule_extraction.py` (14 tests: ConditionParser, SemanticRoleLabeller, AmbiguityFlagger, ConfidenceScorer) — all pass.
-- [x] Populate `tests/test_export.py` (8 tests: JsonExporter, LegalRuleMLExporter) — all pass.
-- [x] Updated `scripts/run_full_workflow.py` to normalise clauses (Phase A) using Normalizer before NLP.
-- **Test suite result: 41 / 41 passed in 3.98s**
+- [x] Implement `src/preprocessing/normalizer.py` — strips list-item prefixes, heading hashes, multi-space runs, mis-encoded Unicode.
+- [x] Fix `src/classification/provision_type.py` — require physical unit after number to avoid false-positive Quantitative (80.8% → 13.0%).
+- [x] Expand `domain/entity_types.yaml` — BUILDING_ELEMENT 14 → ~85 patterns; added FIRE_RESISTANCE, MATERIAL categories.
+- [x] Implement `src/preprocessing/cross_ref_resolver.py` — index section titles, resolve Section X.Y.Z with progressive fallback.
+- [x] Populate `tests/conftest.py`, `tests/test_preprocessing.py` (16), `tests/test_rule_extraction.py` (14), `tests/test_export.py` (8) — 41/41 pass.
+- [x] Updated `scripts/run_full_workflow.py` to normalise clauses in Phase A using Normalizer.
+
+**Completed Phase F enhancements (this session):**
+
+- [x] Fix `DeonticDetector.extract_operator()` — check PROHIBITION/EXEMPTION before OBLIGATION/PERMISSION to prevent `\bshall\b` shadowing `\bshall not\b` (PROHIBITION was 0 → now 5).
+- [x] Fix `scripts/run_full_workflow.py` Phase D — pre-split each clause block into individual sentences via spaCy before calling `ConstraintBuilder.build_from_sentences()`, fixing MISSING_AGENT from 78% → 32%.
+- [x] Tune `src/rule_extraction/ambiguity_flagger.py` `_PRONOUN_RE` — removed `this/that/these/those/such/the above/the following` (legal cross-reference language) from UNRESOLVED_PRONOUN detection (45 → 8 flags).
+- [x] Remove `"in"` false-positive MEASUREMENT pattern from `domain/entity_types.yaml` (matched every English preposition).
+- [x] Add passive voice SVO extraction to `src/nlp_pipeline/dependency_parser.py` — handles `nsubjpass + auxpass` pattern; SVO triplets 11 → 21.
+- [x] Integrate `CrossRefResolver` in workflow Phase A — annotate sections with IDs extracted from title prefix, build index (16 entries), resolve cross-refs to human-readable titles in Phase D.
+- [x] Fix `scripts/run_full_workflow.py` CrossRefResolver usage — correctly handle dict return value from `resolve()`.
+- [x] Fix `tests/test_classification.py` — updated `s4` expected deontic operator from OBLIGATION → PROHIBITION.
+- [x] Full end-to-end run verified: 113 constraints, 41/41 tests, XML export working.
 
 ## ✅ Interactive Apps (Streamlit)
 

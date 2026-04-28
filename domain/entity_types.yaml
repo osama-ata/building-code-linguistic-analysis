@@ -132,7 +132,6 @@ patterns:
     - "km"
     - "sq ft"
     - "ft"
-    - "in"
     - "inches"
     - "lux"
     - "N"
