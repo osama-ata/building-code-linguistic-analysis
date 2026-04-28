@@ -90,6 +90,34 @@ make run-pipeline
 python scripts/run_pipeline.py
 ```
 
+#### 3. Interactive Streamlit Apps
+
+The `apps/` directory contains Streamlit apps that replace the original Jupyter notebooks and provide interactive, browser-based exploration of every pipeline phase.
+
+Install Streamlit if needed:
+
+```bash
+pip install streamlit
+```
+
+Launch an individual app:
+
+```bash
+streamlit run apps/01_md_exploration.py      # Phase A — Markdown exploration & chapter splitting
+streamlit run apps/02_ner_prototyping.py     # Phase B — NER, tokenisation & SVO parsing
+streamlit run apps/03_classifier_training.py # Phase C — Deontic detection & provision classification
+streamlit run apps/04_rule_extraction_demo.py# Phase D — Full rule extraction with JSON export
+streamlit run apps/05_error_analysis.py      # Phase E — Corpus stats, annotation review & error analysis
+```
+
+Or open the home dashboard (requires Streamlit ≥ 1.28 for multi-page links):
+
+```bash
+streamlit run apps/Home.py
+```
+
+Each app mirrors the corresponding notebook phase and exposes all major parameters via sidebar controls.
+
 ## Repository Highlights
 
 Key directories:
